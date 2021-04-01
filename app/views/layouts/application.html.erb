@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoinWork</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <header class="header">
+  <%= link_to image_tag("images/スクリーンショット 2021-03-27 19.03.18.png", class:"logo"), "/" %>
+    <ul class="menu">
+      <li class="menu-item"><a href="/contact/:id" class="menu-item-link">会社概要</a></li>
+      <li class="menu-item"><a href="/posts/list" class="menu-item-link">検索</a></li>
+      <li class="menu-item"><a href="/contact" class="menu-item-link">お問い合わせ</a></li>
+      <a class="menu-item-link menu-item-link-btn" href="/shops/new">成果報告</a>
+    </ul>
+  </header>
+  <%= yield %>
+  <footer class="footer">
+    <p class="copyright">Copyright © 2021 Inc.copyright CoinWork. rights reserved.</p>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px;
+  background-color: #fff;
+}
+.logo {
+  width: 210px;
+  margin-right: 380px;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.menu-item {
+  margin-left: 30px;
+
+}
+.menu-item-link {
+  font-size: 15px;
+  font-weight:900;
+  color: #000000;
+  text-decoration: none;
+}
+.first-view {
+  margin-top: 20px;
+  background-image:url("./images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+.first-view-textarea {
+  padding: 200px 400px;
+}
+.catchcopy {
+  width: 530px;
+  background-color: white;
+  color: black;
+  font-size: 50px;
+  letter-spacing: -3.2px;
+  padding: 20px;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.top-service-btn {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 150px;
+  font-size: 23px;
+  font-weight: 900;
+  color: #fff;
+  padding: 20px 80px;
+  background-color: #FF6600;
+  border-radius: 22px;
+  text-decoration: none;
+}
+.services-section-bar {
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3.2px;
+  background-color: gray;
+  padding: 25px 0;
+}
+.service-cardarea-use {
+  display: flex;
+  margin: 0 100px 0 100px;
+}
+.service-card1 {
+  background-image:url("./images/canva-photo-editor.pc.png");
+  background-size: 500px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 50%;
+}
+.service-card2 {
+  background-image:url("./images/canva-photo-editor.book.png");
+  background-size: 500px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 50%;
+}
+.service-card3 {
+  background-image:url("./images/canva-photo-editor.png");
+  background-size: 500px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 50%;
+}
+.service-card4 {
+  background-image:url("./images/canva-photo-editor.study.png");
+  background-size: 500px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 50%;
+}
+.service-card + .service-card .service-textarea {
+  border-left: 1px solid #ddd;
+}
+.service-textarea {
+  z-index: -1;
+  text-align: center;
+  color: white;
+  font-weight:900;
+  font-size: 20px;
+}
+.service-logo {
+  width: 450px;
+  margin-top: 10px;
+}
+.service-btn-use{
+  width: 350px;
+  text-align: center;
+  margin: auto;
+}
+
+.service-img{
+  height: 200px;
+  margin: auto;
+}
+.services-section-bar {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3.2px;
+  background-color: #323232;
+  padding: 25px 0;
+}
+.service-cardarea {
+  display: flex;
+  margin: 0 100px 0 100px;
+}
+.service-card {
+  width: 33.333%;
+  margin: 0;
+}
+.service-description{
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  margin-left: 0px;
+}
+.service-card + .service-card .service-textarea {
+  border-left: 1px solid #ddd;
+}
+.service-logo {
+  width: 200px;
+  margin-top: 10px;
+}
+.service-btn {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  padding: 10px 80px;
+  background-color: gray;
+  border-radius: 22px;
+}
+.shop-name{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+}
+.shop-explanation{
+  text-align: left;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 0.3em;
+  color: black;
+}
+.top-gaiyou{
+  margin-left: 95px;
+}
+.gaiyou-name{
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  border-left: 2px solid blue;
+}
+.genre-area{
+  display: flex;
+  margin: auto;
+  margin-left: 70px;
+  margin-bottom: 70px;
+}
+.genre-img:hover{
+	cursor: pointer;
+	text-shadow: 2px 1px 3px #000;
+}
+.genre-img1:hover{
+	cursor: pointer;
+	text-shadow: 2px 1px 3px #000;
+}
+.genre-img2:hover{
+	cursor: pointer;
+	text-shadow: 2px 1px 3px #000;
+}
+.genre-img3:hover{
+	cursor: pointer;
+	text-shadow: 2px 1px 3px #000;
+}
+.genre-img4:hover{
+	cursor: pointer;
+	text-shadow: 2px 1px 3px #000;
+}
+.genre-img{
+  background-image: url(images/burger-3442227_1920.jpg);
+  background-size: 200px;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  margin: auto;
+  width: 250px;
+  color: white;
+  font-weight: bold;
+  text-shadow: white;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.genre-img1{
+  background-image: url(images/dung-trieu-DVA6kQNdUWs-unsplash.jpg);
+  background-size: 200px;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  margin: auto;
+  width: 250px;
+  color: white;
+  font-weight: bold;
+  text-shadow: white;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.genre-img2{
+  background-image: url(images/eugene-zhyvchik-vad__5nCLJ8-unsplash.jpg);
+  background-size: 200px;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  margin: auto;
+  width: 250px;
+  color: white;
+  font-weight: bold;
+  text-shadow: white;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.genre-img3{
+  background-image: url(images/toa-heftiba-yfaEuuackFw-unsplash.jpg);
+  background-size: 200px;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  margin: auto;
+  width: 250px;
+  color: white;
+  font-weight: bold;
+  text-shadow: white;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.genre-img4{
+  background-image: url(images/video-4647668_1920.jpg);
+  background-size: 200px;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  margin: auto;
+  width: 250px;
+  color: white;
+  font-weight: bold;
+  text-shadow: white;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.timei-osaka{
+  padding-left:15px;
+}
+.timei-osaka:hover{
+  cursor: pointer;
+	text-shadow: 1px 1px 3px #000;
+}
+.timei-hyogo:hover{
+  cursor: pointer;
+	text-shadow: 1px 1px 3px #000;
+}
+.timei-hyogo{
+  padding-left:15px;
+}
+.area-kensaku{
+  display: flex;
+  block-size: auto;
+  margin-bottom: 50px;
+}
+
+.osaka{
+  box-shadow: 2px 2px 4px;
+  display: inline;
+  display: flex;
+  margin-left: 60px;
+  background-color: whitesmoke;
+  width: 400px;
+}
+.area-osaka{
+  display: inline;
+  margin-left: 10px;
+}
+.font_test {
+  font-weight:  bold;
+}
+.footer {
+  background-color: #000000;
+  padding: 30px 0;
+}
+.copyright {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
