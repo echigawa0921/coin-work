@@ -27,15 +27,15 @@
         <div class="front-text">個室（有無）</div>
         <div class="form-area"><%= f.text_area :private_room, placeholder: "有り" %></div>
         <div class="front-text">Wifi</div>
-        <%= f.text_area :wifi, placeholder: "有り" %></div>
+        <div class="form-area"><%= f.text_area :wifi, placeholder: "有り" %></div>
         <div class="front-text">コンセント</div>
-        <%= f.text_area :power_supply, placeholder: "有り"%></div>
+        <div class="form-area"><%= f.text_area :power_supply, placeholder: "有り"%></div>
         <div class="front-text">ジャンル</div>
-        <%= f.text_area :genre, placeholder: "カフェ"%></div>
-        <div class="front-text">大阪</div>
-        <%= f.text_area :area, placeholder: "大阪" %></div>
-        <div class="front-text">画像</div>
-        <div id="image-list"></div>
+        <div class="form-area"><%= f.text_area :genre, placeholder: "カフェ"%></div>
+        <div class="form-area"><div class="front-text">大阪</div>
+        <div class="form-area"><%= f.text_area :area, placeholder: "大阪" %></div>
+        <div class="form-area"><div class="front-text">画像</div>
+        <div class="form-area"><div id="image-list"></div>
         <%= f.file_field :image, id:"post-image" %></div>
         <div id="preview"></div>
 
