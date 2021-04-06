@@ -11,30 +11,43 @@
         <div class="front-text">店舗名</div>
         <div class="form-area"><%= f.text_area :name, placeholder: "店舗名" %></div>
         <div class="front-text">一言コメント</div>
+
         <div class="form-area"><%= f.text_area :title, placeholder: "一言メッセージ" %></div>
         <div class="front-text">営業時間</div>
+        
         <div class="form-area"><%= f.text_area :open_hour, placeholder: "12:00〜13:00" %></div>
         <div class="front-text">定休日</div>
+        
         <div class="form-area"><%= f.text_area :regular_holiday, placeholder: "月曜日" %></div>
         <div class="front-text">電話番号</div>
+        
         <div class="form-area"><%= f.text_area :telephone, placeholder: "080-4372-0050" %></div>
         <div class="front-text">メールアドレス</div>
+        
         <div class="form-area"><%= f.text_area :address, placeholder: "mh.uc.0921@gmail.com" %></div>
         <div class="front-text">最寄り駅</div>
+        
         <div class="form-area"><%= f.text_area :nearest_station, placeholder: "谷川駅" %></div>
         <div class="front-text">最大人数</div>
+        
         <div class="form-area"><%= f.text_area :capacity, placeholder: "5" %></div>
         <div class="front-text">個室（有無）</div>
+        
         <div class="form-area"><%= f.text_area :private_room, placeholder: "有り" %></div>
         <div class="front-text">Wifi</div>
+        
         <div class="form-area"><%= f.text_area :wifi, placeholder: "有り" %></div>
         <div class="front-text">コンセント</div>
+        
         <div class="form-area"><%= f.text_area :power_supply, placeholder: "有り"%></div>
         <div class="front-text">ジャンル</div>
+        
         <div class="form-area"><%= f.text_area :genre, placeholder: "カフェ"%></div>
         <div class="form-area"><div class="front-text">大阪</div>
+        
         <div class="form-area"><%= f.text_area :area, placeholder: "大阪" %></div>
         <div class="form-area"><div class="front-text">画像</div>
+        
         <div class="form-area"><div id="image-list"></div>
         <%= f.file_field :image, id:"post-image" %></div>
         <div id="preview"></div>
