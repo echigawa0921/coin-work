@@ -40,12 +40,12 @@
         <div class="front-text">コンセント</div>
         
         <div class="form-area"><%= f.text_area :power_supply, placeholder: "有り"%></div>
-        <div class="front-text">ジャンル</div>
+        <div class="form-area"><div class="front-text">ジャンル</div>
         
-        <div class="form-area"><%= f.text_area :genre, placeholder: "カフェ"%></div>
-        <div class="form-area"><div class="front-text">大阪</div>
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"form-area"}) %>
+        <div class="form-area"><div class="front-text">エリア</div>
         
-        <div class="form-area"><%= f.text_area :area, placeholder: "大阪" %></div>
+        <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"form-area"}) %>
         <div class="form-area"><div class="front-text">画像</div>
         
         <div class="form-area"><div id="image-list"></div>
