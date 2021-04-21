@@ -180,7 +180,10 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: 800;
-  color: black;
+  color:  #337ABA;
+}
+.shop-name:hover{
+  color: orange;
 }
 .shop-explanation{
   text-align: left;
@@ -364,4 +367,7 @@ body {
 .other-area{
   width: 50%;
   list-style: none;
+}
+.shop-info{
+  color: #000;
 }
