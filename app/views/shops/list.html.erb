@@ -1,0 +1,23 @@
+<div class="services-section">
+  <p class="services-list-bar">店舗一覧</p>
+</div>
+<main class="main">
+<% @shops.each do |shop| %>
+    <%= link_to shop_path(shop.id),  :style=>"color:black;",method: :get do %>
+        <div class="service-cardarea">
+  <div class="service-card">
+  <%= image_tag shop.image, class: "shop-card__img" if shop.image.attached? %>
+      <div class="service-textarea">
+        <h3 class="shop-name"><%= shop.name %></h3>
+        <h5 class="shop-explanation"><span class="font_test">営業時間：</span><%= shop.open_hour %></h5>
+        <h5 class="shop-explanation"><span class="font_test">休業日</span>：<%= shop.regular_holiday %></h5>
+        <h5 class="shop-explanation"><span class="font_test">アクセス</span>：<%= shop.nearest_station %></h5>
+
+        <a  href="/shops/list" class="service-btn">詳細はこちら</a>
+      </div>
+  </div>
+</div>
+  <% end %>
+  </div>
+  <% end %>
+</main>

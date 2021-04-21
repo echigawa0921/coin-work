@@ -4,7 +4,7 @@
         <div class="first-view-textarea">
           <h1 class="catchcopy">関西で作業場所探すなら<br>Coin-work</h1>
           <p class="subtext"></p>
-          <a href="/posts/leg" class="top-service-btn">詳細を見る</a>
+          <a href="/shops/list" class="top-service-btn">詳細を見る</a>
         </div>
       </div>
       
@@ -194,21 +194,5 @@
     </ul>
   </div>
   </div>
-  
-  <% @shops.each do |shop| %>
-        <div class="arm-card__wrapper">
-          <div class="arm-card">
-          <%= image_tag shop.image, class: "arm-card__img" if shop.image.attached? %>
-            <div class="card__body">
-            <h2 class="card__title">投稿者：<%= shop.name %></h2>
-              <p class="card__summary">
-              <p>鍛えた部位：<%= shop.title %></p>
-              <p>一言：<%= shop.open_hour %></p>
-              </p>
-            </div>
-          </div>
-          <% end %>
-        </div>
-    </main>
 </body>
 

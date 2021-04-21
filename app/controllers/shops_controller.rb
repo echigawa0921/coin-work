@@ -6,6 +6,10 @@ class ShopsController < ApplicationController
         @shop = Shop.new
     end
 
+    def list
+      @shops = Shop.all
+    end
+
     def create
       @shop = Shop.create(shop_params)
       if @shop.save
