@@ -8,6 +8,7 @@ class CreateShops < ActiveRecord::Migration[6.0]
       t.text :regular_holiday
       t.string :telephone
       t.string :address
+      t.string :jusyo
       t.string :nearest_station
       t.string :capacity
       t.string :private_room

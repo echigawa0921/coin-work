@@ -13,6 +13,7 @@ body {
   align-items: center;
   padding: 22px 40px;
   background-color: #fff;
+  border-bottom: 1px gray solid;
 }
 .logo {
   width: 210px;
@@ -345,12 +346,13 @@ body {
   font-weight:  bold;
 }
 .footer {
-  background-color: #000000;
+  background-color: #DCDCDC;
   padding: 30px 0;
 }
 .copyright {
-  font-size: 10px;
-  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
   text-align: center;
   letter-spacing: 2px;
 }
