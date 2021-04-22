@@ -332,11 +332,15 @@ body {
 
 .osaka{
   box-shadow: 2px 2px 4px;
+  color: black;
   display: inline;
   display: flex;
   margin-left: 60px;
   background-color: whitesmoke;
   width: 400px;
+}
+.osaka:hover{
+  color: #323232;
 }
 .area-osaka{
   display: inline;
