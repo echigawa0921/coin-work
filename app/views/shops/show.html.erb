@@ -1,19 +1,65 @@
 <div class="services-section">
-  <p class="services-list-bar">詳細</p>
+  <p class="services-list-bar"><div class="breadcrumbs"><a href="/">Home</a>&rsaquo;<a href="/shops/list">店舗一覧</a>&rsaquo;<span class="current"><%= @shop.name %></span></div></p>
 </div>
-<main class="main">
-        <div class="service-cardarea">
-  <div class="service-card">
-  <%= image_tag @shop.image, class: "shop-card__img" if @shop.image.attached? %>
-      <div class="service-textarea">
-        <h3 class="shop-name"><%= @shop.name %></h3>
-        <h5 class="shop-explanation"><span class="font_test">営業時間：</span><%= @shop.open_hour %></h5>
-        <h5 class="shop-explanation"><span class="font_test">休業日</span>：<%= @shop.regular_holiday %></h5>
-        <h5 class="shop-explanation"><span class="font_test">アクセス</span>：<%= @shop.nearest_station %></h5>
 
-        <a  href="/shops/list" class="service-btn">詳細はこちら</a>
+  <div class="shop">
+    <div class="shop-info">
+    <div class="shop">
+     <div class="info">
+  <div class="shop-controller">
+     <div class="shop-name">
+       <%= @shop.name %></span>
+     </div>
+     <div class="master">
+     </div>
+   </div>
+  </div>
+</div>
+<div class="shop-content">
+  <div class="shop-content-image">
+      <div class="shop-images">
+        <%= image_tag @shop.image, class: "list-shop-card__img" if @shop.image.attached? %>
       </div>
   </div>
+  <div class="shop-content-comment">
+    <p class="shop-content-comment-title">
+      <%= @shop.title %>
+    </p>
+    <p class="shop-content-comment-content"><%= @shop.content %></p>
+  </div>
+  <div class="shop-content-info">
+    <div class="shop">
+<div class="shop-title">
+<p>店舗情報（詳細）</p>
+</div>
+<div class="shop-main">
+<p class="shop-top">店舗基本情報</p>
+<table class="shop-table">
+  <tbody>
+    <tr><th>店名</th><td><%= @shop.name %></td></tr>
+    <tr><th>ジャンル</th><td><%= @shop.genre.name %></td></tr>
+    <tr><th>お問い合わせ</th><td><%= @shop.telephone %></td></tr>
+    <tr><th>住所</th><td><%= @shop.jusyo %></td></tr>
+    <tr><th>最寄り駅</th><td><%= @shop.nearest_station %></td></tr>
+    <tr><th>営業時間</th><td><%= @shop.open_hour %></td></tr>
+    <tr><th>定休日</th><td><%= @shop.regular_holiday %></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="shop-detail">
+<p class="shop-top">席・設備</p>
+<table class="shop-table">
+  <tbody>
+    <tr><th>席数</th><td><%= @shop.capacity %></td></tr>
+    <tr><th>個室</th><td><%= @shop.private_room %></td></tr>
+    <tr><th>wifi</th><td><%= @shop.wifi %></td></tr>
+    <tr><th>電源</th><td><%= @shop.power_supply %></td></tr>
+  </tbody>
+</table>
+</div>
 </div>
   </div>
-</main>
+</div>
+
+</div>
+</div>

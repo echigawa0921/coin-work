@@ -26,7 +26,7 @@ class ShopsController < ApplicationController
       private
       def shop_params
         params.require(:shop).permit(:name, :title, :content,:open_hour,:regular_holiday,:telephone,
-                                     :address,:nearest_station,:capacity,:private_room,:wifi,:power_supply,
+                                     :address,:nearest_station,:capacity,:private_room,:wifi,:power_supply,:jusyo,
                                      :genre_id,:area_id,:image)
       end
 end

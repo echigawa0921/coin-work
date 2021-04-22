@@ -10,9 +10,12 @@
       <%= form_with model: @shop, url:shops_path,local: true do |f| %>
         <div class="front-text">店舗名</div>
         <div class="form-area"><%= f.text_area :name, placeholder: "店舗名" %></div>
-        <div class="front-text">一言コメント</div>
+        <div class="front-text">メインタイトル</div>
 
-        <div class="form-area"><%= f.text_area :title, placeholder: "一言メッセージ" %></div>
+        <div class="form-area"><%= f.text_area :title, placeholder: "メインタイトル" %></div>
+        <div class="front-text">サブタイトル</div>
+
+        <div class="form-area"><%= f.text_area :content, placeholder: "サブタイトル" %></div>
         <div class="front-text">営業時間</div>
         
         <div class="form-area"><%= f.text_area :open_hour, placeholder: "12:00〜13:00" %></div>
@@ -24,6 +27,9 @@
         <div class="form-area"><%= f.text_area :telephone, placeholder: "080-4372-0050" %></div>
         <div class="front-text">メールアドレス</div>
         
+        <div class="form-area"><%= f.text_area :jusyo, placeholder: "東京都渋谷区神南1丁目12-16アジアビル8F" %></div>
+        <div class="front-text">住所</div>
+
         <div class="form-area"><%= f.text_area :address, placeholder: "mh.uc.0921@gmail.com" %></div>
         <div class="front-text">最寄り駅</div>
         

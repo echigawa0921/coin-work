@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_03_28_075916) do
     t.text "regular_holiday"
     t.string "telephone"
     t.string "address"
+    t.string "jusyo"
     t.string "nearest_station"
     t.string "capacity"
     t.string "private_room"
