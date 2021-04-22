@@ -14,6 +14,35 @@ class ShopsController < ApplicationController
       @shops = Shop.where(area_id: 2)
     end
 
+    def area_hyogo
+      @shops = Shop.where(area_id: 3)
+    end
+
+    def area_kyoto
+      @shops = Shop.where(area_id: 4)
+    end
+
+    def genre_fastfood
+      @shops = Shop.where(genre_id: 2)
+    end
+
+    def genre_cafe
+      @shops = Shop.where(genre_id: 3)
+    end
+
+    def genre_manga
+      @shops = Shop.where(genre_id: 4)
+    end
+
+    def genre_karaoke
+      @shops = Shop.where(genre_id: 5)
+    end
+
+    def genre_space
+      @shops = Shop.where(genre_id: 6)
+    end
+
+
     def create
       @shop = Shop.create(shop_params)
       if @shop.save

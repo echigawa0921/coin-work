@@ -1,0 +1,31 @@
+<div class="services-section">
+  <p class="services-list-bar">ジャンル（漫画喫茶）</p>
+</div>
+<main class="main">
+<% @shops.each do |shop| %>
+    <%= link_to shop_path(shop.id),:style=>"color: #337ABA;", method: :get do %>
+    <div class="list-service-cardarea">
+  <div class="list-service-card">
+  <div class="shop-top-name">
+    <span class="shop-name"><%= shop.name %></span>
+    <span class="shop-info">【<%= shop.area.name %>】 <%= shop.nearest_station %>  /  <%= shop.genre.name %></span>
+  </div>
+  <div class="list-service-textarea">
+     <div class="list-shop-image">
+        <%= image_tag shop.image, class: "list-shop-card__img" if shop.image.attached? %>
+      </div>
+      <div class="list-shop-expanation">
+        <h6 class="list-shop-explanation"><%= shop.title %></h6>
+        <div class="list-color">
+          <h5 class="shop-explanation"><span class="font_test">営業時間：</span><%= shop.open_hour %></h5>
+          <h5 class="shop-explanation"><span class="font_test">休業日</span>：<%= shop.regular_holiday %></h5>
+          <h5 class="shop-explanation"><span class="font_test">アクセス</span>：<%= shop.nearest_station %></h5>
+          <h5 class="shop-explanation"><span class="font_test">Wifi</span>：<%= shop.wifi %></h5>
+        </div>
+      </div>
+  </div>
+</div>
+  <% end %>
+  </div>
+  <% end %>
+</main>
