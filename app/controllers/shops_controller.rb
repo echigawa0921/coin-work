@@ -10,6 +10,10 @@ class ShopsController < ApplicationController
       @shops = Shop.all
     end
 
+    def area_osaka
+      @shops = Shop.where(area_id: 2)
+    end
+
     def create
       @shop = Shop.create(shop_params)
       if @shop.save
