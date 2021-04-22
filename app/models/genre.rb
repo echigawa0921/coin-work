@@ -1,4 +1,6 @@
 class Genre < ActiveHash::Base
+  include ActiveHash::Associations
+  has_many :shops
     self.data = [
       { id: 1, name: '--' },
       { id: 2, name: 'ファストフード' },
@@ -8,7 +10,4 @@ class Genre < ActiveHash::Base
       { id: 6, name: 'コワーキングスペース' },
       { id: 7, name: 'その他' }
     ]
-
-    include ActiveHash::Associations
-    has_many :genre
     end

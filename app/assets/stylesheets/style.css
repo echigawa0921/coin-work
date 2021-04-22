@@ -76,7 +76,7 @@ body {
   padding: 25px 0;
 }
 .service-cardarea-use {
-  display: flex;20
+  display: flex;
   margin: 0 100px 0 100px;
 }
 .service-card1 {
@@ -187,10 +187,17 @@ body {
 }
 .shop-explanation{
   text-align: left;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 200;
-  line-height: 0.3em;
+  line-height: 0.1em;
   color: black;
+}
+.list-shop-explanation{
+  text-align: left;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 0.1em;
+  color: gray;
 }
 .top-gaiyou{
   margin-left: 95px;
@@ -370,4 +377,5 @@ body {
 }
 .shop-info{
   color: #000;
+  margin-left: 30px;
 }

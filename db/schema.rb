@@ -46,8 +46,8 @@ ActiveRecord::Schema.define(version: 2021_03_28_075916) do
     t.string "private_room"
     t.string "wifi"
     t.string "power_supply"
-    t.integer "genre_id", null: false
-    t.integer "area_id", null: false
+    t.integer "genre_id"
+    t.integer "area_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
