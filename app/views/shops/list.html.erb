@@ -4,8 +4,6 @@
 <main class="main">
 <% @shops.each do |shop| %>
     <%= link_to shop_path(shop.id),:style=>"color: #337ABA;", method: :get do %>
-    <% @shops.each do |shop| %>
-      <%= link_to shop_path(shop.id),:style=>"color: #337ABA;", method: :get do %>
     <div class="list-service-cardarea">
   <div class="list-service-card">
   <div class="shop-top-name">
