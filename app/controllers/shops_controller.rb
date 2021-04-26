@@ -1,4 +1,5 @@
 class ShopsController < ApplicationController
+  before_action :move_to_index, except: [:index, :show]
     def index
         @shops = Shop.all
     end
@@ -61,6 +62,12 @@ class ShopsController < ApplicationController
         params.require(:shop).permit(:name, :title, :content,:open_hour,:regular_holiday,:telephone,
                                      :address,:nearest_station,:capacity,:private_room,:wifi,:power_supply,:jusyo,
                                      :genre_id,:area_id,:image)
+      end
+
+      def move_to_index
+        unless user_signed_in?
+          redirect_to  '/users/sign_in'
+        end
       end
 end
 
