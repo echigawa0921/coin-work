@@ -1,4 +1,5 @@
 class Shop < ApplicationRecord
+  has_many :comments
 
     has_one_attached :image
     extend ActiveHash::Associations::ActiveRecordExtensions

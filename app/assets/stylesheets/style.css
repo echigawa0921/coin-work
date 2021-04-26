@@ -312,6 +312,7 @@ body {
 }
 .timei-osaka{
   padding-left:15px;
+  color: #000;
 }
 .timei-osaka:hover{
   cursor: pointer;
@@ -323,6 +324,7 @@ body {
 }
 .timei-hyogo{
   padding-left:15px;
+  color: #000;
 }
 .area-kensaku{
   display: flex;
@@ -337,10 +339,37 @@ body {
   margin-left: 60px;
   background-color: whitesmoke;
   width: 400px;
+  color: #000;
+}
+.category-osaka{
+  box-shadow: 2px 2px 4px;
+  align-items: center;
+  padding-left: 5px;
+  display: inline;
+  display: flex;
+  background-color: whitesmoke;
+  width: 700px;
+  height: 80px;
+  color: #000;
+  font-size: 18px;
+}
+.category-timei{
+  box-shadow: 2px 2px 4px;
+  align-items: center;
+  padding-left: 10px;
+  display: inline;
+  display: flex;
+  background-color: whitesmoke;
+  width: 1050px;
+  height: 80px;
+  color: #000;
+  font-size: 18px;
 }
 .area-osaka{
   display: inline;
   margin-left: 10px;
+  color: #337ABA;
+  padding-left: 7px;
 }
 .font_test {
   font-weight:  bold;
@@ -365,7 +394,6 @@ body {
   text-align: center;
 }
 .other-list{
-  display: flex;
   border-bottom: 2px solid gray;
   margin-bottom: 50px;
 }

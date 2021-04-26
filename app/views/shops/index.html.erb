@@ -6,11 +6,62 @@
           <p class="subtext"></p>
           <a href="/shops/list" class="top-service-btn">詳細を見る</a>
           <%= form_with(url: search_shops_path, local: true, method: :get, class: "search-form") do |form| %>
-            <%= form.text_field :keyword, placeholder: "検索する", class: "search-input" %>
+            <%= form.text_field :keyword, placeholder: "エリア・ジャンル", class: "index-search-input" %>
             <%= form.submit "検索", class: "search-btn" %>
           <% end %>
         </div>
       </div>
+      <p class="services-section-bar">ジャンルから探す</p>
+      <div class="genre-area">
+        <a href="/shops/genre_fastfood"><div class="genre-card">
+          <h2 class="genre-img">ファストフード</h2>
+          </div>
+        </a>
+        <a href="/shops/genre_cafe"><div class="genre-card">
+          <h2 class="genre-img1">カフェ</h2>
+          </div>
+        </a>
+        <a href="/shops/genre_manga"><div class="genre-card">
+          <h2 class="genre-img2">漫画喫茶</h2>
+          </div>
+        </a>
+        <a href="/shops/genre_karaoke"><div class="genre-card">
+          <h2 class="genre-img3">カラオケ</h2>
+          </div>
+        </a>
+        <a href="/shops/genre_space"><div class="genre-card">
+          <h2 class="genre-img4">コワーキングスペース</h2>
+          </div>
+        </a>
+       </div>
+      </div>
+  
+      <div class="area-kensaku">
+      <a href="/shops/area_osaka" class="osaka"><h1 class="timei-osaka">大阪</h1>
+        <ul class="sub-osaka">
+          <li class="area-osaka">難波</li>
+          <li class="area-osaka">天王寺</li>
+          <li class="area-osaka">梅田</li>
+          <li class="area-osaka">新大阪</li>
+        </ul>
+        </a>
+      <a href="/shops/area_hyogo" class="osaka"><h1 class="timei-hyogo">兵庫</h1>
+        <ul class="sub-osaka">
+          <li class="area-osaka">神戸</li>
+          <li class="area-osaka">三宮</li>
+          <li class="area-osaka">西宮</li>
+          <li class="area-osaka">姫路</li>
+        </ul>
+      </a>
+      <a href="/shops/area_kyoto" class="osaka"><h1 class="timei-hyogo">京都</h1>
+      <ul class="sub-osaka">
+        <li class="area-osaka">福知山</li>
+        <li class="area-osaka">宮津</li>
+        <li class="area-osaka">京都</li>
+        <li class="area-osaka">宇治</li>
+      </ul>
+    </a>
+    </div>
       
       <p class="services-section-bar">使用シーン</p>
       <div class="service-cardarea-use">
@@ -47,74 +98,40 @@
         </div>
       </div>
   </div>
-    <p class="services-section-bar">ジャンルから探す</p>
-    <div class="genre-area">
-      <a href="/shops/genre_fastfood"><div class="genre-card">
-        <h2 class="genre-img">ファストフード</h2>
-        </div>
-      </a>
-      <a href="/shops/genre_cafe"><div class="genre-card">
-        <h2 class="genre-img1">カフェ</h2>
-        </div>
-      </a>
-      <a href="/shops/genre_manga"><div class="genre-card">
-        <h2 class="genre-img2">漫画喫茶</h2>
-        </div>
-      </a>
-      <a href="/shops/genre_karaoke"><div class="genre-card">
-        <h2 class="genre-img3">カラオケ</h2>
-        </div>
-      </a>
-      <a href="/shops/genre_space"><div class="genre-card">
-        <h2 class="genre-img4">コワーキングスペース</h2>
-        </div>
-      </a>
-     </div>
-    </div>
 
-    <div class="area-kensaku">
-    <a href="/shops/area_osaka" class="osaka"><h1 class="timei-osaka">大阪</h1>
-      <ul class="sub-osaka">
-        <li class="area-osaka">難波</li>
-        <li class="area-osaka">天王寺</li>
-        <li class="area-osaka">梅田</li>
-        <li class="area-osaka">新大阪</li>
-      </ul>
-      </a>
-    <a href="/shops/area_hyogo" class="osaka"><h1 class="timei-hyogo">兵庫</h1>
-      <ul class="sub-osaka">
-        <li class="area-osaka">神戸</li>
-        <li class="area-osaka">三宮</li>
-        <li class="area-osaka">西宮</li>
-        <li class="area-osaka">姫路</li>
-      </ul>
-    </a>
-    <a href="/shops/area_kyoto" class="osaka"><h1 class="timei-hyogo">京都</h1>
-    <ul class="sub-osaka">
-      <li class="area-osaka">福知山</li>
-      <li class="area-osaka">宮津</li>
-      <li class="area-osaka">京都</li>
-      <li class="area-osaka">宇治</li>
-    </ul>
-  </a>
-  </div>
-
+  <p class="services-section-bar">その他検索</p>
   <div class="other-list">
     <ul class="other-genre"><h3>ジャンル別で探す</h3>
-      <li>ファストフード</li>
-      <li>カフェ</li>
-      <li>カラオケ</li>
-      <li>漫画喫茶</li>
-      <li>コワーキングスペース</li>
-      <li>一覧ページ</li>
+    <div class="category-osaka">
+      <a href="/shops/genre_fastfood"><li class="area-osaka">ファストフード</li></a>
+      <a href="/shops/genre_cafe"><li class="area-osaka">カフェ</li></a>
+      <a href="/shops/genre_karaoke"><li class="area-osaka">カラオケ</li></a>
+      <a href="/shops/genre_manga"><li class="area-osaka">漫画喫茶</li></a>
+      <a href="/shops/genre_space"><li class="area-osaka">コワーキングスペース</li></a>
+      <a href="/shops/list"><li class="area-osaka">一覧ページ</li></a>
+    </div>
     </ul>
     <ul class="other-area"><h3>その他条件・エリアで探す</h3>
-    <li>大阪</li>
-    <li>京都</li>
-    <li>兵庫</li>
-    <li>尼崎</li>
-    <li>福知山</li>
-    <li>宇治</li>
+    <div class="category-timei">
+      <a href="/shops/area_osaka"><li class="area-osaka">大阪</li></a>
+      <a href="/shops/area_osaka"><li class="area-osaka">梅田</li></a>
+      <a href="/shops/area_osaka"><li class="area-osaka">新世界</li></a>
+      <a href="/shops/area_osaka"><li class="area-osaka">天王寺</li></a>
+      <a href="/shops/area_osaka"><li class="area-osaka">天満</li></a>
+      <a href="/shops/area_kyoto"><li class="area-osaka">京都</li></a>
+      <a href="/shops/area_kyoto"><li class="area-osaka">宮津</li></a>
+      <a href="/shops/area_kyoto"><li class="area-osaka">天橋立</li></a>
+      <a href="/shops/area_kyoto"><li class="area-osaka">京都市内</li></a>
+      <a href="/shops/area_hyogo"><li class="area-osaka">兵庫</li></a>
+      <a href="/shops/area_hyogo"><li class="area-osaka">姫路</li></a>
+      <a href="/shops/area_hyogo"><li class="area-osaka">淡路島</li></a>
+      <a href="/shops/area_hyogo"><li class="area-osaka">神戸</li></a>
+      <a href="/shops/area_hyogo"><li class="area-osaka">西宮</li></a>
+
+      <a href="/shops/area_hyogo"><li class="area-osaka">尼崎</li></a>
+      <a href="/shops/area_kyoto"><li class="area-osaka">福知山</li></a>
+      <a href="/shops/area_kyoto"><li class="area-osaka">宇治</li></a>
+    </div>
   </ul>
   </div>
 </body>
