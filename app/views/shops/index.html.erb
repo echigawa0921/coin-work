@@ -5,6 +5,10 @@
           <h1 class="catchcopy">関西で作業場所探すなら<br>Coin-work</h1>
           <p class="subtext"></p>
           <a href="/shops/list" class="top-service-btn">詳細を見る</a>
+          <%= form_with(url: search_shops_path, local: true, method: :get, class: "search-form") do |form| %>
+            <%= form.text_field :keyword, placeholder: "検索する", class: "search-input" %>
+            <%= form.submit "検索", class: "search-btn" %>
+          <% end %>
         </div>
       </div>
       

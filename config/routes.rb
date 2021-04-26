@@ -13,5 +13,9 @@ Rails.application.routes.draw do
    get "/shops/genre_space"
 
   root to: 'shops#index'
-  resources :shops
+  resources :shops do
+    collection do
+      get 'search'
+    end
+  end
 end
