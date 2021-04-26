@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get "/shops/list"
 
    get "/shops/area_osaka"

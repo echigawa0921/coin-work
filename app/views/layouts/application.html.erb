@@ -11,10 +11,17 @@
   <header class="header">
   <%= link_to image_tag("images/スクリーンショット 2021-03-27 19.03.18.png", class:"logo"), "/" %>
     <ul class="menu">
-      <li class="menu-item"><a href="/contact/:id" class="menu-item-link">会社概要</a></li>
-      <li class="menu-item"><a href="/posts/list" class="menu-item-link">検索</a></li>
-      <li class="menu-item"><a href="/contact" class="menu-item-link">お問い合わせ</a></li>
-      <a class="menu-item-link menu-item-link-btn" href="/shops/new">成果報告</a>
+    <% if user_signed_in? %>
+    <div class="user_nav grid-6">
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <%= link_to "口コミ投稿", shops_list_path, class: "post" %>
+    </div>
+  <% else %>
+    <div class="grid-6">
+      <%= link_to "ログイン", new_user_session_path, class: "post" %>
+      <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+    </div>
+  <% end %>
     </ul>
   </header>
   <%= yield %>
