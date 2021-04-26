@@ -1,5 +1,5 @@
 class ShopsController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
     def index
         @shops = Shop.all
     end
@@ -41,6 +41,10 @@ class ShopsController < ApplicationController
 
     def genre_space
       @shops = Shop.where(genre_id: 6)
+    end
+
+    def search
+      @shops = Shop.search(params[:keyword])
     end
 
 
