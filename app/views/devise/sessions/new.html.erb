@@ -20,7 +20,7 @@
       <% end -%>
 
       <div class="actions">
-        <%= f.submit "ログイン" %>
+        <%= f.submit "ログイン" ,class:"login-form"%>
       </div>
       <div class="guest-box">
       <div class="guest-line">
@@ -28,7 +28,7 @@
          <%= f.hidden_field :email, value: 'guest@example.com' %><br /></div>
          <%= f.hidden_field :password, value: 'password' %><br /></div
          <div class="guest-actions">
-           <%= f.submit 'ゲストログイン'%>
+           <%= f.submit 'ゲストログイン' ,class:"login-form"%>
           </div>
        <% end %> 
       </div>

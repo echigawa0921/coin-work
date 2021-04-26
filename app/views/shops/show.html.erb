@@ -1,5 +1,5 @@
 <div class="services-section">
-  <p class="services-show-bar"><div class="breadcrumbs"><a href="/">Home</a>&rsaquo;<a href="/shops/list">店舗一覧</a>&rsaquo;<span class="current"><%= @shop.name %></span></div></p>
+  <p class="services-show-bar"><div class="breadcrumbs"><a href="/" , style="color:#000">Home</a>&rsaquo; <a href="/shops/list"style="color:#000">店舗一覧</a>&rsaquo;<span class="current"><%= @shop.name %></span></div></p>
 </div>
 
   <div class="shop">
@@ -95,20 +95,21 @@
 </div>
   </div>
 </div>
-<div class="container">
+<div class="container-comment">
 <% if user_signed_in? %>
-  <%= form_with(model: [@shops, @comment], local: true) do |form| %>
-    <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-    <%= form.submit "SEND" %>
+  <%= form_with(model: [@shop, @comment], local: true) do |form| %>
+    <%= form.text_area :text, placeholder: "コメントする", rows: "2",class:"comment-form" %>
+    <br>
+    <%= form.submit "SEND"  ,class:"btn" %>
   <% end %>
 <% else %>
-  <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+  <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※<br>ゲストログインが便利です。</p></strong>
 <% end %>
 <div class="comments">
 <h4>＜コメント一覧＞</h4>
 <% @comments.each do |comment| %>
   <p>
-    <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+    <strong><%= comment.user.nickname %>：</strong>
     <%= comment.text %>
   </p>
 <% end %>
