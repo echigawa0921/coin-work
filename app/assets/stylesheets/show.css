@@ -3,6 +3,9 @@
     margin:0 200px 0 200px;
     padding-top: 20px;
 }
+.services-show-bar:a{
+    color: black;
+}
 .services-show-bar{
     font-size: 30px;
     font-weight: 900;

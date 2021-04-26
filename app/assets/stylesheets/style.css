@@ -348,7 +348,7 @@ body {
   display: inline;
   display: flex;
   background-color: whitesmoke;
-  width: 700px;
+  width: 750px;
   height: 80px;
   color: #000;
   font-size: 18px;
@@ -360,7 +360,7 @@ body {
   display: inline;
   display: flex;
   background-color: whitesmoke;
-  width: 1050px;
+  width: 1100px;
   height: 80px;
   color: #000;
   font-size: 18px;
@@ -370,6 +370,12 @@ body {
   margin-left: 10px;
   color: #337ABA;
   padding-left: 7px;
+}
+.top-area-osaka{
+  display: inline;
+  margin-left: 10px;
+  color: #337ABA;
+
 }
 .font_test {
   font-weight:  bold;

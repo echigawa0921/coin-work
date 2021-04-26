@@ -2,6 +2,9 @@
     <%= form.text_field :keyword, placeholder: "検索する", class: "search-input" %>
     <%= form.submit "検索", class: "search-btn" %>
 <% end %>
+<div class="services-section">
+  <p class="services-list-bar">店舗一覧</p>
+</div>
 
   <main class="main">
   <% @shops.each do |shop| %>

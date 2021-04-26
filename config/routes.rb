@@ -14,10 +14,9 @@ Rails.application.routes.draw do
 
   root to: 'shops#index'
   resources :shops do
+    resources :comments, only: :create
     collection do
       get 'search'
-    resources :comments, only: :create
   end
 end
-
 end
