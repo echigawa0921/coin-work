@@ -47,6 +47,17 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
   }
+  .shopcontainer{
+    margin-top: 89px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+    background-color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
   .container-comment {
     margin-top: 130px;
     margin-bottom: 20px;
