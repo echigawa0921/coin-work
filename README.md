@@ -21,6 +21,9 @@ Ruby on rails 6.0.0
 mysql2 0.4.4  
 unicorn 5.4.1  
 
+# 店舗紹介
+<img width="590" alt="スクリーンショット 2021-05-07 14 00 36" src="https://user-images.githubusercontent.com/69971834/117399946-9c4b2100-af3c-11eb-9c25-caf1850678c4.png">
+パンくずも記述しています！
 
 # 作成者
 yuki.Echigawa
