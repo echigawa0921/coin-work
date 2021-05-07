@@ -6,7 +6,7 @@ TOPページと一覧ページ作成完了しましたので、途中経過と�
 
 # 見本
 ## TOPPAGE
-<img width="800" alt="スクリーンショット 2021-04-12 23 15 14" src="https://user-images.githubusercontent.com/69971834/114409132-165de380-9be5-11eb-9ebe-25a088a62042.png">
+<img width="880" alt="スクリーンショット 2021-05-07 13 54 28" src="https://user-images.githubusercontent.com/69971834/117399612-e7b0ff80-af3b-11eb-947e-abeed24661e4.png">
   
   ## Pic-up
   <img width="800" alt="スクリーンショット 2021-04-12 23 15 32" src="https://user-images.githubusercontent.com/69971834/114409792-c6cbe780-9be5-11eb-9591-fc75930b9d44.png">
