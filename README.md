@@ -14,7 +14,7 @@
 ## TOPPAGE
 <img width="880" alt="スクリーンショット 2021-05-07 13 54 28" src="https://user-images.githubusercontent.com/69971834/117399612-e7b0ff80-af3b-11eb-947e-abeed24661e4.png">
   
-  ## Pic-up
+  ## Pick-up
   <img width="800" alt="スクリーンショット 2021-04-12 23 15 32" src="https://user-images.githubusercontent.com/69971834/114409792-c6cbe780-9be5-11eb-9591-fc75930b9d44.png">
    ## categoly-list
    <img width="800" alt="スクリーンショット 2021-04-12 23 15 49" src="https://user-images.githubusercontent.com/69971834/114409896-dfd49880-9be5-11eb-9211-00bfd97a39fb.png">
