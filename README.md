@@ -12,7 +12,7 @@
 パンくず機能.   
 
 # デプロイ
-AWS
+AWS（EC2）自動デプロイ
 
 ## TOPPAGE
 <img width="880" alt="スクリーンショット 2021-05-07 13 54 28" src="https://user-images.githubusercontent.com/69971834/117399612-e7b0ff80-af3b-11eb-947e-abeed24661e4.png">
